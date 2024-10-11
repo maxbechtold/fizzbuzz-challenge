@@ -1,4 +1,4 @@
-import { main } from "./main";
+import { fizzbuzz, main } from "./main";
 
 describe("A Test", () => {
   it("succeeds", () => {
@@ -8,4 +8,8 @@ describe("A Test", () => {
   it("works", () => {
     main()
   });
+
+  it("turns 3 to Fizz", () => {
+    expect(fizzbuzz(3)).toEqual("Fizz")
+  })
 });

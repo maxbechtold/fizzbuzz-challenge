@@ -1,17 +1,18 @@
-function fizzbuzz(num: number) {
+export function fizzbuzz(num: number) {
     if (num % 5 == 0 && num % 3 == 0) {
         console.log("FizzBuzz");
-        return;
+        return "FizzBuzz";
     }
     if (num % 3 == 0) {
         console.log("Fizz")
-        return;
+        return "Fizz";
     }
     if (num % 5 == 0) {
         console.log("Buzz")
-        return;
+        return "Buzz";
     }
     console.log(num)
+    return num
 }
 
 export function main() {
